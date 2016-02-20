@@ -14,7 +14,6 @@ m_timelabel_suffix = " seconds"
 m_cpu_count = "CPU Count: "
 m_madeby = "Idea by anddill, program by Fabian Dill"
 
-
 m_option_time = "Testtime: "
 m_option_freq = "Frequency: "
 m_option_proc = ""

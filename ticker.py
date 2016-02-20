@@ -40,7 +40,6 @@ def linfreqstress(name, start_time, settings, end_time):
         x+=1
         time.sleep(max(0,start_clock-time.clock()))
 
-
 #timestress = linfreqstress
 
 def timestress_debug(name, start_time, settings, end_time):

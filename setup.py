@@ -29,13 +29,13 @@ setup(  name = "CPU Ticker",
         #description = "",
         options = {"build_exe": build_exe_options},
         executables = [Executable("gui.py", base=base, targetName=targetname),
-                       Executable("console.py", targetname=targetname2)])
+                       Executable("console.py", targetName=targetname2)])
 
-if sys.platform == "win32" and os.path.isfile("build\\upx.exe"):
+if sys.platform == "win32" and os.path.isfile("upx.exe"):
     strbuild = str(buildfolder)
     targets = os.listdir(strbuild)
     targets = filter(lambda x:x.endswith((".pyd", ".exe")), targets)
     targets = " ".join((os.path.join(strbuild, target) for target in targets))
-    command = "build\\upx.exe "+targets
+    command = "upx.exe "+targets
     print(command)
     os.system(command)
